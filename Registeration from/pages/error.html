@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.kwE8IapDUTtylieeRnn2YAHaHa?pid=ImgDet&rs=1"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Error</title>
+  </head>
+  <body>
+    <style>
+      /* Apply glassmorphism effect to the container */
+      .container {
+        background: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+        backdrop-filter: blur(15px); /* Blur effect to create glassmorphism */
+        border-radius: 15px; /* Rounded corners */
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        animation: fadeIn 1s ease-out, pulse 2s infinite;
+      }
+
+      /* Center the container vertically and horizontally */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure full viewport height */
+        background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+        margin: 0;
+      }
+
+      /* Fade-in animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Pulse animation for slight zoom in and out */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Typography */
+      h1 {
+        font-size: 2.5rem;
+        color: #d9534f; /* Red color for error indication */
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #333;
+      }
+    </style>
+
+    <div class="container">
+      <h1>Registration Error</h1>
+      <p>There was an error during registration. Please try again.</p>
+    </div>
+  </body>
+</html>
